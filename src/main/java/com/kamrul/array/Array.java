@@ -13,19 +13,14 @@ public class Array {
             for (int i = 0; i < number.length; i++) {  //----------(1)
                 number[i] = input.nextDouble();
             }
-            for (int i = 0; i < number.length; i++) {  //----------(2)
-                sum = sum + number[i];
+            double max = number[0];
+            for (int i = 1; i < 5; i++) {
+                if (max < number[i]) {
+                    max = number[i];
+                }
             }
-            //System.out.println("The sum is : "+sum); //এ line seen করলে যোগফল ও দেখতে পাবে।।
-            double average = sum / number.length;
-            System.out.println("The average is : " + average);
+            System.out.println("Maximum number is : " + max);
         }
     }
-
-    /*
-    user-এর input দ্বারা loop এর মাধ্যমে array যোগ করে average বের করা হয়েছে।।
-    
-    1নং সমীকরণে user-এর দেওয়া input গুলো loop-এর মাধ্যমে করা initialize করা হয়েছে, যা আগের commit-এ ঝামেলার বলা হয়েছিল।।
-    ২নং সমীকরণে user input কে যোগ করা হয়েছে, তারপর result দেখানো হয়েছে।। 
-     */
+    //1নং সমীকরণে user-এর দেওয়া input গুলো loop-এর মাধ্যমে করা initialize হয়েছে।।
 }
