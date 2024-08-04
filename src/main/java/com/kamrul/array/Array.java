@@ -13,13 +13,13 @@ public class Array {
             for (int i = 0; i < number.length; i++) {  //----------(1)
                 number[i] = input.nextDouble();
             }
-            double max = number[0];
-            for (int i = 1; i < 5; i++) {
-                if (max < number[i]) {
-                    max = number[i];
+            double min = number[0];
+            for (int i = 1; i < number.length; i++) {
+                if (min > number[i]) {
+                    min = number[i];
                 }
             }
-            System.out.println("Maximum number is : " + max);
+            System.out.println("Minimum number is : " + min);
         }
     }
     //1নং সমীকরণে user-এর দেওয়া input গুলো loop-এর মাধ্যমে করা initialize হয়েছে।।
