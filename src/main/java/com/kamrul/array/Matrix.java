@@ -51,11 +51,11 @@ public class Matrix {
         System.out.printf("\n");
         //---------------------------------------------------------------
 
-        //Subtraction of all matrix
-        System.out.print("A-B = ");
+        //Multiplication of all matrix 
+        System.out.print("A*B = ");
         for (int row = 0; row < 2; row++) {
             for (int col = 0; col < 3; col++) {
-                C[row][col] = A[row][col] - B[row][col];
+                C[row][col] = A[row][col] * B[row][col];
                 System.out.print("\t " + C[row][col]);
             }
             System.out.println();
@@ -63,7 +63,7 @@ public class Matrix {
         //---------------------------------------------------------------
     }
     /*
-    এখানে multiple array declare করে বিয়োগ করা হয়েছে।।
+    এখানে multiple array declare করে গুণ করা হয়েছে।।
     
     ১নং সমীকরণের  '\t'  result কে খুবই সাজানো-গোছানো অবস্থায় দেখতে সাহায্য করবে।।
     2নং সমীকরণের এই nextline ব্যবহার না করলে সকল result এক line-এ দেখাবে।।
