@@ -2,20 +2,22 @@ package com.kamrul.array;
 public class Two_Dimensional_array {
     public static void main(String[] args) {
 
-        //2 Dimensional array declare 
-        int[][] number = new int[2][3];  //2,3 কে array size বলে, এটা যেকোন সংখ্যা হতে পারে।।
-        //array initialize -----------------(1)
-        number[0][0] = 10;
-        number[0][1] = 20;
-        number[0][2] = 30;
-        number[1][0] = 40;
-        number[1][1] = 50;
-        number[1][2] = 60;
+        //2 Dimenstional array dicleare 
+        int[][] number = new int[4][5];  //4,5 কে array size বলে, এটা যেকোন সংখ্যা হতে পারে।।
+        int count = 0;
+        
+        //array initialize
+        for (int row = 0; row < 4; row++) {
+            for (int col = 0; col < 5; col++) {
+                number[row][col] = count;
+                count++;
+            }
+        }
 
         //print by loop system 
-        for (int row = 0; row < 2; row++) {
-            for (int col = 0; col < 3; col++) {
-                System.out.print(" " + number[row][col]); //--------(1)
+        for (int row = 0; row < 4; row++) {
+            for (int col = 0; col < 5; col++) {
+                System.out.print(" " + number[row][col]);  //--------(1)
             }
             System.out.println();  //--------(2)
         }
@@ -29,6 +31,7 @@ public class Two_Dimensional_array {
     array size এর তুলনায় initialize কম হলে সমস্যা হয় না, তবে বেশি initialize করে নিলে সমস্যা হয়।।
     array size কখনো negative number হয় না।।
     
+    বি:দ্র: এটা "C programming pattern" folder এর commit no- "floyd triangle number" এর মতো result দেখায়।। 
      */
 
 }
