@@ -3,21 +3,26 @@ public class Two_Dimensional_array {
     public static void main(String[] args) {
 
         //2 Dimenstional array dicleare 
-        int[][] number = new int[4][5];  //4,5 কে array size বলে, এটা যেকোন সংখ্যা হতে পারে।।
+        int [][] number = new int [4][];
         int count = 0;
         
         //array initialize
+        number[0] = new int[1];
+        number[1] = new int[2];
+        number[2] = new int[3];
+        number[3] = new int[4];
+        
         for (int row = 0; row < 4; row++) {
-            for (int col = 0; col < 5; col++) {
+            for (int col = 0; col < row+1; col++) {
                 number[row][col] = count;
                 count++;
             }
         }
-
-        //print by loop system 
+        
+        //print by loop system
         for (int row = 0; row < 4; row++) {
-            for (int col = 0; col < 5; col++) {
-                System.out.print(" " + number[row][col]);  //--------(1)
+            for (int col = 0; col < row+1; col++) {
+                System.out.print(" "+number[row][col]); //--------(1)
             }
             System.out.println();  //--------(2)
         }
